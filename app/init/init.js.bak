@@ -1,0 +1,38 @@
+/**
+ * Wimera System Pvt.Ltd, Bangalore - India.
+ *
+ * Copyright (c) 2019. Wimera System Pvt.Ltd.
+ * All Rights Reserved.
+ *
+ * Revision number:
+ * ******************
+ * Rev.01 : 22-Feb-2019     @Author: Ramesh (ramesh@wimerasys.com)
+ *     Web server init added
+ * 
+ */
+
+/*
+ * retrieve the required modules
+ */
+'use strict';
+
+const db = require('../models/db');
+//const mqtt= require('../mqtt/mqtt').mqtt;
+const logger = require("../../utils/logger.js");
+/*
+ * Defines the routes of the expressApplication
+ */
+async function serverInit() {
+    // console.log('1111');
+    /*
+     * init database
+     */
+    await db.dbInit();
+    console.log('Server Initialized');
+    // await mqtt.init();
+    // console.log('MQTT connected');
+    // logger.debug(__filename, __line,'Server Initialized');
+    // db.init();
+}
+
+exports.serverInit = serverInit;
