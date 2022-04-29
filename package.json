@@ -9,7 +9,7 @@
   "author": "Ramesh BG (ramesh@wimerasys.com)",
   "license": "ISC",
   "dependencies": {
-    "async": "^2.6.2",
+    "async": "^2.6.4",
     "azure-iothub": "^1.9.9",
     "azure-storage": "^2.10.3",
     "body-parser": "^1.18.3",
